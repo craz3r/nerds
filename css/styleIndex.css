@@ -1,0 +1,318 @@
+@import url('normalize.css');
+@import url('styleGeneral.css');
+
+/* Slider */
+
+.page-slider
+{
+    position: relative;
+
+    margin: 0;
+    padding-top: 20px;
+
+    background: #eee;
+}
+
+.page-slider .container
+{
+    overflow: hidden;
+}
+
+.slider-wrapper
+{
+    overflow: hidden;
+
+    width: 3600px;
+
+    transition: all .4s ease-in;
+}
+
+
+
+.slide-element
+{
+    float: left;
+
+    width: 550px;
+    min-height: 410px;
+    padding-right: 650px;
+
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+    background-size: contain;
+}
+
+.slide-element-1
+{
+    background-image: url('../img/slide1.png');
+}
+
+.slide-element-2
+{
+    background-image: url('../img/slide2.png');
+}
+
+.slide-element-3
+{
+    background-image: url('../img/slide3.png');
+}
+
+.slide-title
+{
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 55px;
+
+    color: #000;
+}
+
+.slide-description
+{
+    color: #283136;
+}
+
+.slide-link-btn
+{
+    margin-top: 30px;
+}
+
+.slider-pagination
+{
+    position: absolute;
+    z-index: 10;
+    bottom: 85px;
+    left: 50%;
+}
+
+.pagination-element
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+
+    border-radius: 50%;
+    background: #fff;
+}
+
+.pagination-active
+{
+    box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #c1c1c1;
+}
+
+/* Section Advantages */
+
+.advantages
+{
+    padding: 75px 0;
+}
+
+.advantages-list
+{
+    display: flex;
+}
+
+.advantage-item
+{
+    margin-right: 100px;
+    padding-top: 145px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantage-sites
+{
+    background-image: url('../img/advantage-sites.jpg');
+}
+
+.advantage-apps
+{
+    background-image: url('../img/advantage-apps.jpg');
+}
+
+.advantage-presentations
+{
+    background-image: url('../img/advantage-presents.jpg');
+}
+
+.advantage-title
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.advantage-btn
+{
+    width: 90px;
+    margin-top: 35px;
+    padding: 15px 35px;
+
+    border-radius: 2px;
+}
+
+.advantage-sites-btn
+{
+    background: #fb565a;
+}
+
+.advantage-apps-btn
+{
+    background: #00ca74;
+}
+
+.advantage-apps-btn:hover
+{
+    background: #00bc6c;
+}
+
+.advantage-apps-btn:active
+{
+    background: #00aa62;
+}
+
+.advantage-presentations-btn
+{
+    background: #efc84a;
+}
+
+.advantage-presentations-btn:hover
+{
+    background: #eab534;
+}
+
+.advantage-presentations-btn:active
+{
+    background: #e5a722;
+}
+
+/* Section About Us */
+
+.about-company
+{
+    display: flex;
+
+    padding: 35px 0 75px;
+
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-resume
+{
+    padding-right: 500px;
+
+    background: url('../img/about-bg.jpg') no-repeat right 0 top 0;
+}
+
+.resume-title
+{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 45px;
+
+    color: #000;
+}
+
+.about-title
+{
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.about-orders-list li
+{
+    margin-bottom: 30px;
+}
+
+.about-orders-list li::before
+{
+    font-size: 24px;
+    font-weight: 600;
+
+    content: '—  ';
+
+    color: #fb565a;
+}
+
+.stats-list
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.stats-item-title
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+
+    margin: 30px 0 20px;
+
+    color: #000;
+}
+
+/* Section Partners */
+
+.partners
+{
+    border-bottom: 2px solid #eee;
+}
+
+.partners-list
+{
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.partners-list li
+{
+    position: relative;
+}
+
+.partners-list li:not(:first-child)::before
+{
+    position: absolute;
+    top: 35%;
+    left: 0;
+
+    display: inline-block;
+
+    width: 2px;
+    height: 50px;
+
+    content: '';
+    vertical-align: middle;
+
+    background: #eee;
+}
+
+.partners-list a img
+{
+    opacity: .2;
+}
+
+.partners-list a:hover img
+{
+    opacity: 1.0;
+}
+
+.partners-list a:active img
+{
+    opacity: .1;
+}

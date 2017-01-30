@@ -1,0 +1,448 @@
+@import url('normalize.css');
+@import url('styleGeneral.css');
+@import url('nouislider.min.css');
+
+/* Title */
+
+.page-title
+{
+    padding: 70px 0 115px;
+
+    background-color: #eee;
+}
+
+.page-title h1
+{
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 55px;
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #000;
+}
+
+main
+{
+    padding: 45px 0 35px;
+
+    background: #fff;
+}
+
+main .container
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.catalog-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+/* Catalog controls */
+
+.cost-change
+{
+    width: 220px;
+    margin-top: 40px;
+}
+
+.cost-block
+{
+    position: relative;
+
+    margin-bottom: 10px;
+    padding: 40px 20px;
+
+    border-radius: 2px;
+    background: #eee;
+}
+
+.cost-values
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cost-values input
+{
+    width: 50px;
+    padding: 10px 13px;
+
+    text-align: center;
+
+    border: none;
+    background: #eee;
+
+    -moz-appearance: textfield;
+}
+
+.cost-values input::-webkit-outer-spin-button,
+.cost-values input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
+.cost-values input:focus
+{
+    outline: none;
+}
+
+.change-grid
+{
+    margin-top: 50px;
+}
+
+.grid-list li
+{
+    line-height: 30px;
+
+    margin-bottom: 10px;
+}
+
+.grid-list input[type='radio']
+{
+    display: none;
+}
+
+.grid-list label
+{
+    cursor: pointer;
+}
+
+.grid-list label:hover::before
+{
+    opacity: 1.0;
+}
+
+.grid-list input[type='radio']:disabled + label::before,
+.grid-list input[type='radio']:disabled + label
+{
+    opacity: .3;
+}
+
+.grid-list label::before
+{
+    display: inline-block;
+
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    opacity: .4;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px #4d4d4d, inset 0 0 0 8px #fff;
+}
+
+.grid-list input[type='radio']:checked + label::before
+{
+    box-shadow: inset 0 0 0 3px #4d4d4d, inset 0 0 0 8px #fff, inset 0 0 0 13px #4d4d4d;
+}
+
+
+.features
+{
+    margin-top: 40px;
+}
+
+.features-change-list li
+{
+    line-height: 20px;
+
+    margin-bottom: 20px;
+}
+
+.features-change-list input[type='checkbox']
+{
+    display: none;
+}
+
+.features-change-list label
+{
+    cursor: pointer;
+}
+
+.features-change-list label:hover::before
+{
+    opacity: 1.0;
+}
+
+.features-change-list input[type='checkbox']:disabled + label::before,
+.features-change-list input[type='checkbox']:disabled + label
+{
+    opacity: .3;
+}
+
+.features-change-list label::before
+{
+    display: inline-block;
+
+    width: 27px;
+    height: 24px;
+    margin-right: 5px;
+
+    content: '';
+    vertical-align: middle;
+
+    opacity: .4;
+    background: url('../img/checkbox-sprite.png') no-repeat 0 0;
+}
+
+.features-change-list input[type='checkbox']:checked + label::before
+{
+    background: url('../img/checkbox-sprite.png') no-repeat -27px 0;
+}
+
+
+.btn-control
+{
+    margin-top: 45px;
+
+    color: #000;
+    background: #eee;
+}
+
+.btn-control:hover
+{
+    background: #dfdfdf;
+}
+
+.btn-control:active
+{
+    color: rgba(0,0,0,.3);
+    background: #d5d5d5;
+    box-shadow: inset 0 3px 0 0 rgba(0,0,0,.2);
+}
+
+/* Catalog */
+
+.catalog
+{
+    width: 66%;
+}
+
+.catalog-head
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorted-options a
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-right: 20px;
+
+    vertical-align: bottom;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    opacity: .3;
+    color: #000;
+}
+
+.sorted-options a:hover
+{
+    opacity: .6;
+}
+
+.sorted-options .opt-active,
+.sorted-options .opt-active:hover,
+.sorted-options a:active
+{
+    opacity: 1.0;
+}
+
+.sorted-options a:nth-child(3)
+{
+    margin-right: 40px;
+}
+
+.sorted-options a:last-child
+{
+    margin-right: 0;
+}
+
+.sorted-options .arrow
+{
+    font-size: 0;
+}
+
+.sorted-options .arrow::before
+{
+    display: inline-block;
+
+    content: '';
+
+    border: 10px solid #000;
+    border-right-width: 5px;
+    border-right-color: transparent;
+    border-left-width: 5px;
+    border-left-color: transparent;
+}
+
+.sorted-options .arrow-up::before
+{
+    border-top-style: none;
+}
+
+.sorted-options .arrow-down::before
+{
+    border-bottom-style: none;
+}
+
+.catalog-items
+{
+    display: flex;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-item
+{
+    position: relative;
+
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.catalog-item::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 41px;
+
+    content: '';
+
+    opacity: .12;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url('../img/browser.png') no-repeat center 0;
+    background-size: cover;
+}
+
+.catalog-item img
+{
+    border: 1px solid #e5e5e5;
+    border-top-style: none;
+}
+
+
+.item-info
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: auto;
+    height: 37%;
+    padding: 5px 65px 0;
+
+    text-align: center;
+
+    background: #eee;
+}
+
+.item-description
+{
+    line-height: 18px;
+
+    margin-bottom: 30px;
+
+    color: #666;
+}
+
+.item-price-btn
+{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.catalog-item:hover .item-info
+{
+    display: block;
+}
+
+.catalog-item:hover::before
+{
+    opacity: 1.0;
+}
+
+.catalog-item:hover
+{
+    box-shadow: 0 5px 10px 3px #cfcfcf;
+}
+
+.catalog-pagination
+{
+    margin-top: 50px;
+}
+
+.catalog-pagination a
+{
+    font-weight: 600;
+    line-height: 18px;
+
+    display: inline-block;
+
+    margin-right: 10px;
+    padding: 15px 20px;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+    border: 3px solid #dbdbdb;
+    border-radius: 3px;
+    background: #dbdbdb;
+}
+
+.catalog-pagination a:hover
+{
+    background: #dfdfdf;
+}
+
+.catalog-pagination a:active
+{
+    color: rgba(0,0,0,.3);
+    border-top-color: #bfbfbf;
+}
+
+.catalog-pagination .catalog-active
+{
+    background-color: #fff;
+}
+
+.catalog-pagination .catalog-next
+{
+    padding: 15px 70px;
+}
