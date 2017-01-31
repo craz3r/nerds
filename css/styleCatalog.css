@@ -24,18 +24,14 @@
     color: #000;
 }
 
-main
+.catalog-wrapper
 {
+    display: flex;
+    justify-content: space-between;
+
     padding: 45px 0 35px;
 
     background: #fff;
-}
-
-main .container
-{
-    display: flex;
-
-    justify-content: space-between;
 }
 
 .catalog-title

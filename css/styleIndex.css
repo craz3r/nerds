@@ -5,10 +5,10 @@
 
 .page-slider
 {
-    position: relative;
-
     margin: 0;
     padding-top: 20px;
+
+    height: 410px;
 
     background: #eee;
 }
@@ -16,15 +16,23 @@
 .page-slider .container
 {
     overflow: hidden;
+    position: relative;
+    height: 410px;
 }
 
 .slider-wrapper
 {
     overflow: hidden;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+	margin-left: 20px;
 
     width: 3600px;
-
-    transition: all .4s ease-in;
+	
+	transition: left, .5s ease-in;
 }
 
 

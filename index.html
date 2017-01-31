@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name = "format-detection" content = "telephone=no" />
 		<title>Nerds</title>
-		<link href="css/styleIndex.css" rel="stylesheet">
+		<link href="css/styles.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="page-header">
@@ -28,11 +28,11 @@
 		<section class="page-slider">
 			<div class="container">
 				<ul class="slider-pagination">
-					<li class="pagination-element slide1 pagination-active"></li>
-					<li class="pagination-element slide2"></li>
-					<li class="pagination-element slide3"></li>
+					<li class="pagination-element pagination-active" data-number="0"></li>
+					<li class="pagination-element"  data-number="1"></li>
+					<li class="pagination-element"  data-number="2"></li>
 				</ul>
-				<div class="slider-wrapper">
+				<div class="slider-wrapper" data-index="0">
 					<div class="slide-element slide-element-1">
 						<h2 class="slide-title">Только ночь,<br> только хардкор</h2>
 						<p class="slide-description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается</p>
@@ -167,6 +167,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/script.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
